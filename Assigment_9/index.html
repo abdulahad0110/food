@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD Inn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #EFF0D1;
+        }
+
+        marquee {
+            background-color: #589167;
+            font-size: 1.5em;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .card {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .card a {
+            float: left;
+            display: block;
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            padding: 14px 16px;
+            padding-left: auto;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .menu {
+            background-color: #589167;
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            text-align: center;
+            margin: 25px 0;
+            height: 8%;
+            font-size: 2em;
+        }
+        
+        .main_picture{
+            width: 100%;
+        }
+
+        .heading {
+            color: #589167;
+            height: 8vh;
+            font-size: 3em;
+            padding-left: 10%;
+            padding-top: 0.125em;
+
+        }
+
+        .menu_list {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            width: 100%;
+            background-color: #4F6F52;
+            color: #fff;
+        }
+
+        .menu_list th,
+        .menu_list td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+
+        .menu_list th {
+            background-color: #D2E3C8;
+            color: black;
+            font-weight: bold;
+        }
+
+        .menu_list tr {
+            border-bottom: 1px solid #042A2B;
+        }
+
+        .menu_list ins {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .menu_list del {
+            color: #CDEDF6;
+            text-decoration: line-through;
+        }
+
+        .menu_list tr:hover {
+            background-color: #739072;
+        }
+
+        .top_button {
+            background-color: #D2E59E;
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <marquee direction="right" scrollamount="5" behavior="alternate">Karachi Fast Food</marquee>
+
+    <div class="navbar">
+        <a href="index.html" class="right">Home</a>
+        <a href="about_us.html">About</a>
+        <a href="contact_us.html">Contact</a>
+        <a href="#news">News</a>
+    </div>
+
+    <img src="images/main_picture.jpg" class="main_picture" alt="">
+    <!-- <div class="main_container">
+        <img src="images/bbq.jpg" class="main_picture" alt="">
+        <img src="images/burger.jpg" class="main_picture" alt="">
+        <img src="images/pizza.jpg" class="main_picture" alt="">
+    </div> -->
+
+    <h1 class="heading">Food Menu</h1>
+
+    <div class="card">
+        <a href="#Burgers" class="button">Burgers</a>
+        <a href="#Bar B.Q" class="button">Bar B.Q</a>
+        <a href="#Roll" class="button">Roll</a>
+        <a href="#sandwiches" class="button">Sandwiches</a>
+        <a href="#starters" class="button">Starters</a>
+        <a href="#deal" class="button">Deals</a>
+        <a href="#kiddymeal" class="button">Kiddy Meals</a>
+    </div>
+
+    <h3 class="menu" id="Roll">Roll</h3>
+
+    <table class="menu_list">
+        <tr class="table_head">
+            <th>Name</th>
+            <th>Original Price</th>
+            <th>Discounted Price</th>
+        </tr>
+        <tr>
+            <td>Red Roll</td>
+            <td><del>Rs.300</del></td>
+            <td><ins>Rs.240</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Roll</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Malai Roll</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Afghani Boti</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Kebab Roll</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Beef Roll</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Beef Bihari Roll</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+    </table>
+    <a class="top_button" href="#top">Top</a>
+
+    <h3 class="menu" id="Platter">Platter</h3>
+
+    <table class="menu_list">
+        <tr class="table_head">
+            <th>Name</th>
+            <th>Original Price</th>
+            <th>Discounted Price</th>
+        </tr>
+        <tr>
+            <td>Shahi Platter(8 person)</td>
+            <td><del>Rs.300</del></td>
+            <td><ins>Rs.240</ins></td>
+        </tr>
+        <tr>
+            <td>Classic Platter(6 person)</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Kebab Platter(2-3 person)</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+    </table>
+
+    <a class="top_button" href="#top">Top</a>
+
+    <h3 class="menu" id="Burgers">Burgers</h3>
+
+    <table class="menu_list">
+        <tr class="table_head">
+            <th>Name</th>
+            <th>Original Price</th>
+            <th>Discounted Price</th>
+        </tr>
+        <tr>
+            <td>Zinger Burger</td>
+            <td><del>Rs.300</del></td>
+            <td><ins>Rs.240</ins></td>
+        </tr>
+        <tr>
+            <td>Zinger Cheese Burger</td>
+            <td><del>Rs.320</del></td>
+            <td><ins>Rs.280</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Burger</td>
+            <td><del>Rs.200</del></td>
+            <td><ins>Rs.150</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Cheese Burger</td>
+            <td><del>Rs.220</del></td>
+            <td><ins>Rs.170</ins></td>
+        </tr>
+        <tr>
+            <td>Beef Cheese Burger</td>
+            <td><del>Rs.220</del></td>
+            <td><ins>Rs.170</ins></td>
+        </tr>
+        <tr>
+            <td>Cheese Burger</td>
+            <td><del>Rs.220</del></td>
+            <td><ins>Rs.170</ins></td>
+        </tr>
+    </table>
+
+    <a class="top_button" href="#top">Top</a>
+
+
+    <h3 class="menu" id="Bar B.Q">Bar B.Q.</h3>
+
+    <table class="menu_list">
+        <tr class="table_head">
+            <th>Name</th>
+            <th>Original Price</th>
+            <th>Discounted Price</th>
+        </tr>
+        <tr>
+            <td>Chicken Tikka</td>
+            <td><del>Rs.300</del></td>
+            <td><ins>Rs.240</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Boti</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Malai Boti</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Chicken Afghani Boti</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Sheestok</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Malai</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Ishafani</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Tandoori</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Beef Bihari</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+        <tr>
+            <td>Tikka</td>
+            <td><del>Rs.250</del></td>
+            <td><ins>Rs.200</ins></td>
+        </tr>
+    </table>
+
+    <a class="top_button" href="#top">Top</a>
+
+
+    <footer>
+        <p>© 2024 Your Company. All rights reserved.</p>
+        <p>Follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a>, and <a href="#">Instagram</a>.</p>
+    </footer>
+
+</body>
+
+</html>
